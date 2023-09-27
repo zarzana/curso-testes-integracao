@@ -16,7 +16,7 @@ app.get("/fibonacci", (req: Request, res: Response) => {
   res.send(sequence);
 });
 
-function fibonacciSequence(numberOfElements: number) {
+export function fibonacciSequence(numberOfElements: number) {
   const sequence = [0, 1];
   for (let i = 2; i < numberOfElements; i++) {
     const nextNumber = sequence[i - 1] + sequence[i - 2];
